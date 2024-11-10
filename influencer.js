@@ -44,7 +44,7 @@ const renderActiveGiveaways = (giveawayIds) => {
       <div class="col-md-4">
         <div class="giveaway-card border border-1 rounded p-3">
           <img
-            src="https://placeholder.co/600x400?text=Post+Image"
+            src="https://placehold.co/600x400?text=Post+Image"
             class="w-100 rounded rounded-1"
             alt="Post Image"
           />
@@ -67,7 +67,7 @@ const renderPastGiveawaways = (giveawayIds) => {
       <div class="col-md-4">
         <div class="giveaway-card border border-1 rounded p-3">
           <img
-            src="https://placeholder.co/600x400?text=Post+Image"
+            src="https://placehold.co/600x400?text=Post+Image"
             class="w-100 rounded rounded-1"
             alt="Post Image"
           />

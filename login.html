@@ -160,28 +160,23 @@
 
           <div class="bottom">
             <!-- form -->
-            <form action="#">
+            <form action="javascript:void(0)" onsubmit="handleLogin(this)">
               <input
-                type="email"
+                type="text"
                 name="jo-login-email"
-                id="jo-login-email"
-                placeholder="Email Address"
+                id="userHandle"
+                placeholder="Instagram username"
               />
-              <input
-                type="password"
-                name="jo-login-password"
-                id="jo-login-password"
-                placeholder="Enter Password"
-              />
-              <button type="button" class="forget-password-btn">
+
+              <!-- <button type="button" class="forget-password-btn">
                 Forgot Your Password?
-              </button>
+              </button> -->
               <button type="submit" class="jo-btn">Sign in</button>
             </form>
 
-            <p>
+            <!-- <p>
               Don't have Membership? <a href="register.html">Create Account</a>
-            </p>
+            </p> -->
           </div>
         </div>
       </section>
@@ -281,38 +276,15 @@
     <script src="assets/vendor/no-ui-slider/nouislider.min.js"></script>
     <script src="assets/vendor/fs-lightbox/fslightbox.js"></script>
 
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: "2925644157603218", // Replace with your app ID
-          cookie: true,
-          xfbml: true,
-          version: "v17.0", // Use the correct API version
-        });
-
-        // Log a page view for analytics (optional)
-        FB.AppEvents.logPageView();
-        FB.getLoginStatus(function (response) {
-          statusChangeCallback(response);
-        });
-      };
-
-      // Load the Facebook SDK asynchronously
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/accordion.js"></script>
+    <script>
+      const handleLogin = () => {
+        const userHandle = document.getElementById("userHandle").value;
+        window.location.href = `start_giveaway.html`;
+        localStorage.setItem("influencer_handle", userHandle);
+      };
+    </script>
   </body>
 </html>

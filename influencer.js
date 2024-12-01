@@ -39,12 +39,14 @@ const fetchGiveaways = async (giveawayIds) => {
 const renderActiveGiveaways = (giveawayIds) => {
   fetchGiveaways(giveawayIds).then((giveaways) => {
     giveaways.forEach((giveaway) => {
-      console.log(activeGiveaways);
       activeGiveaways.innerHTML += `
       <div class="col-md-4">
         <div class="giveaway-card border border-1 rounded p-3">
           <img
-            src="https://placehold.co/600x400?text=Post+Image"
+            src=${
+              giveaway.image_url ||
+              "https://placehold.co/600x400?text=Post+Image"
+            }
             class="w-100 rounded rounded-1"
             alt="Post Image"
           />

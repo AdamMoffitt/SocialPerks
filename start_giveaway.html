@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Giveaway</title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/font/flaticon_jio_-_influencer.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css" />
+    <link rel="stylesheet" href="assets/vendor/plyr/plyr.css" />
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/no-ui-slider/nouislider.min.css"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="jo-sidebar">
+      <div>
+        <!-- heading -->
+        <div
+          class="jo-sidebar__heading d-flex justify-content-between align-items-center"
+        >
+          <a href="#"
+            ><img src="assets/img/logo.svg" alt="logo" class="logo"
+          /></a>
+          <button type="button" class="jo-sidebar-close-btn">
+            <i class="flaticon-add-plus-button"></i>
+          </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="jo-header-nav-in-mobile"></div>
+      </div>
+
+      <div>
+        <a href="about.html" class="jo-btn"
+          ><i class="flaticon-add-plus-button"></i>Follow Me</a
+        >
+        <!-- socials -->
+        <div
+          class="tt-footer-top__socials jo-footer-top__socials jo-sidebar-socials justify-content-start justify-content-sm-end"
+        >
+          <a href="#"><i class="flaticon-facebook-1"></i></a>
+          <a href="#"><i class="flaticon-twitter"></i></a>
+          <a href="#"><i class="flaticon-social-media"></i></a>
+          <a href="#"><i class="flaticon-youtube-1"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="jo-header">
+      <a href="index.html"><img src="assets/img/logo.svg" alt="logo" /></a>
+      <div class="jo-header-right">
+        <div class="jo-header-nav">
+          <div class="to-go-to-sidebar-in-mobile">
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <div class="has-sub-menu relative">
+                <a role="button">Streaming Videos</a>
+
+                <ul class="jo-header-submenu">
+                  <li><a href="videos-1.html">Streaming Videos 1</a></li>
+                  <li><a href="videos-2.html">Streaming Videos 2</a></li>
+                  <li><a href="videos-3.html">Streaming Videos 3</a></li>
+                  <li>
+                    <a href="video-details.html">Streaming Video Details</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="has-sub-menu relative">
+                <a role="button">Pages</a>
+
+                <ul class="jo-header-submenu">
+                  <li><a href="video-shop.html">Video Shop</a></li>
+                  <li>
+                    <a href="video-shop-details.html">Video Shop Details</a>
+                  </li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="service-details.html">Service Details</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="register.html">Sign Up</a></li>
+                  <li><a href="login.html">Sign in</a></li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="has-sub-menu relative">
+                <a role="button">Blog</a>
+
+                <ul class="jo-header-submenu">
+                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </div>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="about.html" class="jo-btn"
+            ><i class="flaticon-add-plus-button"></i>Follow Me</a
+          >
+          <button
+            class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"
+          >
+            <i class="flaticon-menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+      <!-- BREADCRUMB SECTION START -->
+      <section class="jo-breadcrumb">
+        <div class="container">
+          <h1 class="jo-page-title jo-section-title">Start a Giveaway</h1>
+          <ul class="jo-breadcrumb-nav">
+            <li><a href="#">Home</a></li>
+            <li><span>/</span></li>
+            <li class="current-page">Giveaway</li>
+          </ul>
+        </div>
+      </section>
+      <!-- BREADCRUMB SECTION END -->
+
+      <!-- GIVEAWAY FORM START -->
+      <div class="jo-checkout-wrapper">
+        <form class="jo-checkout-form" actio="#">
+          <!-- Giveaway Details -->
+          <div class="form-block">
+            <h3 class="block-title">Giveaway Details</h3>
+            <div>
+              <input
+                type="text"
+                name="giveaway_name"
+                id="giveaway_name"
+                placeholder="Enter Giveaway Name"
+                required
+              />
+              <span class="error-message"></span>
+            </div>
+            <div>
+              <input
+                type="number"
+                name="dollar_value"
+                id="amount"
+                placeholder="Enter Giveaway Amount (e.g., 500)"
+                required
+              />
+              <span class="error-message"></span>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="image_url"
+                id="image_url"
+                placeholder="Enter Giveaway Image URL"
+                required
+              />
+              <span class="error-message"></span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <input
+                  type="number"
+                  name="num_entered"
+                  id="amount"
+                  placeholder="Number of Entries"
+                  required
+                />
+                <span class="error-message"></span>
+              </div>
+              <div>
+                <input
+                  type="number"
+                  name="num_winners"
+                  id="amount"
+                  placeholder="Number of Winners"
+                  required
+                />
+                <span class="error-message"></span>
+              </div>
+            </div>
+            <div>
+              <textarea
+                rows="10"
+                name="description"
+                id="description"
+                placeholder="Enter Giveaway Description"
+                required
+                style="
+                  width: 100%;
+                  padding: clamp(15px, 1.58vw, 30px);
+                  border-radius: 10px;
+                  border: none;
+                  outline: none;
+                  margin-bottom: clamp(15px, 1.05vw, 20px);
+                  height: 150px;
+                "
+              ></textarea>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="form-block">
+            <h3 class="block-title">Timeline</h3>
+            <div>
+              <label for="start_date">Start Date:</label>
+              <input
+                type="date"
+                name="start_date"
+                id="start_date"
+                required
+                placeholder="Start date"
+              />
+              <span class="error-message"></span>
+            </div>
+            <div>
+              <label for="end_date">End Date:</label>
+              <input
+                type="date"
+                name="end_date"
+                id="end_date"
+                required
+                placeholder="End date"
+              />
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- How to Enter -->
+          <div class="form-block">
+            <h3 class="block-title">How to Enter</h3>
+            <div>
+              <input
+                type="text"
+                name="post_url"
+                id="post_url"
+                placeholder="Enter Post URL"
+                required
+              />
+              <span class="error-message"></span>
+            </div>
+            <div>
+              <textarea
+                name="how_to_enter"
+                id="how_to_enter"
+                placeholder="Explain how users can enter the giveaway"
+                rows="4"
+                required
+                style="
+                  width: 100%;
+                  padding: clamp(15px, 1.58vw, 30px);
+                  border-radius: 10px;
+                  border: none;
+                  outline: none;
+                  margin-bottom: clamp(15px, 1.05vw, 20px);
+                  height: 150px;
+                "
+              ></textarea>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="container py-2 d-flex align-items-center">
+            <button type="submit" class="jo-btn m-0 mx-auto">
+              Submit Giveaway
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- GIVEAWAY FORM END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="jo-footer">
+      <div class="jo-container">
+        <div class="tt-footer-bottom text-center">
+          <p class="mb-0">Copyright ©2024 Developed by Influtics</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/plyr/plyr.polyfilled.js"></script>
+    <script src="assets/vendor/no-ui-slider/nouislider.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="./giveaway.js"></script>
+  </body>
+</html>
